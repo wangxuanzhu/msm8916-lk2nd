@@ -1,0 +1,46 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: Ubuntu-18.04
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Initialization environment
+      env:
+        DEBIAN_FRONTEND: noninteractive
+      run: |
+        sudo rm -rf /etc/apt/sources.list.d/* /usr/share/dotnet /usr/local/lib/android /opt/ghc
+        sudo -E apt-get -qq update
+        sudo -E apt-get -qq install device-tree-compiler gcc-arm-none-eabi libfdt-dev
+        sudo  -E apt-get -qq clean
+    - name: make
+      run: make lk2nd-msm8916
+      
+    - name: Zip img
+      run: |
+        cd  build-lk2nd-msm8916
+        ls
+      
+    - name: upload to release
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: ${{ github.ref }}
+        name: Release ${{ github.ref }}
+        body: TODO New Release.
+        draft: false
+        prerelease: false
+        files: |
+           build-lk2nd-msm8916/lk2nd.img
+    
+    - name: make check
+      run: make check
+    - name: make distcheck
+      run: make distcheck
