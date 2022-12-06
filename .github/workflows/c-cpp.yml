@@ -25,7 +25,7 @@ jobs:
         sudo -E apt-get -qq install device-tree-compiler gcc-arm-none-eabi libfdt-dev
         sudo  -E apt-get -qq clean
     - name: make
-      run: make lk2nd-msm8916
+      run: make
       
     - name: Zip img
       run: |
@@ -41,7 +41,7 @@ jobs:
         draft: false
         prerelease: false
         files: |
-           build-lk2nd-msm8916/lk2nd.img
+           */lk2nd.img
     
     - name: make check
       run: make check
