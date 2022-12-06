@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: GPL-2.0-only
+
+/dts-v1/;
+ 
+#include <skeleton.dtsi>
+
+/ {
+	// This is used by the bootloader to find the correct DTB
+	qcom,msm-id = <206 0>; // qcom,msm-id = <247 0>; for APQ8016
+	qcom,board-id = <8 19>/* FIXME: Check your downstream device tree */;
+
+	model = "Vivo Y31A"; // FIXME
+	compatible = "vivo,pd1505", "qcom,msm8916", "lk2nd,device"; // FIXME
+};
