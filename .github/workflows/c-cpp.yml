@@ -25,7 +25,7 @@ jobs:
         sudo -E apt-get -qq install device-tree-compiler gcc-arm-none-eabi libfdt-dev
         sudo  -E apt-get -qq clean
     - name: make
-      run: make arm-none-eabi- lk2nd-msm8916
+      run: make TOOLCHAIN_PREFIX=arm-none-eabi- lk2nd-msm8916
       
     - name: upload to release
       uses: softprops/action-gh-release@v1
