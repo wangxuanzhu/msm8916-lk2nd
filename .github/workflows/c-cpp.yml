@@ -37,8 +37,3 @@ jobs:
         prerelease: false
         files: |
            */lk2nd.img
-    
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
