@@ -39,4 +39,6 @@ DTBS += \
 	$(LOCAL_DIR)/msm8939-huawei-kiwi.dtb \
 	$(LOCAL_DIR)/msm8939-mtp.dtb \
 	$(LOCAL_DIR)/msm8939-qrd-skuk.dtb \
-	$(LOCAL_DIR)/msm8939-samsung-r01.dtb
+	$(LOCAL_DIR)/msm8939-samsung-r01.dtb\
+	$(LOCAL_DIR)/msm8916-vivo-pd1505.dtb
+
