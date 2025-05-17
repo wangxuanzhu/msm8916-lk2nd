@@ -14,4 +14,18 @@
 	lk2nd,match-panel;
 
 	lk2nd,dtb-files = "msm8916-vivo-pd1505";
+
+panel {
+		compatible = "vivo,pd1505-panel", "lk2nd,panel";
+
+		qqcom,mdss_dsi_pd1505l_otm9605a_540p_video_baoming {
+			compatible = "vivo,pd1505l-otm9605a-540p-video-baoming";
+		};
+		qcom,mdss_dsi_pd1505l_otm9605a_540p_video {
+			compatible = "vivo,pd1505l-otm9605a-540p-video";
+		};
+		qcom,mdss_dsi_pd1505l_otm9605a_540p_video_boenew {
+			compatible = "vivo,pd1505l-otm9605a-540p-video-boenew";
+		};
+	};
 };
