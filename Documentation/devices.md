@@ -12,11 +12,13 @@
 - BQ Aquaris M5 - piccolo
 - BQ Aquaris X5 - paella, picmt
 - DragonBoard 410c - apq8016-sbc
+- EE Harrier Mini - harrier-mini
 - GPLUS FL8005A
 - HTC One M8s - m8qlul (quirky - see comment in `lk2nd/device/dts/msm8916/msm8939-htc-m8qlul.dts`)
 - Huawei Ascend G7 - G7-L01
 - Huawei G7 Plus / G8 / GX8 - rio
 - Huawei Honor 5X / GR5 (2016) - kiwi
+- Huawei MediaPad T2 10.0 Pro - federer
 - Huawei Y635 - Y635-L01 (quirky - see comment in `lk2nd/device/dts/msm8916/msm8916-huawei-y635-l01.dts`)
 - Lenovo A6000
 - Lenovo A6010
@@ -36,13 +38,13 @@
 - Samsung Galaxy Core Max - SM-G5108Q (quirky - see comment in `lk2nd/device/dts/msm8916/msm8916-samsung.dts`)
 - Samsung Galaxy Core Prime LTE - SM-G360F, SM-G360G, SM-G360T (rossaltezt is quirky - see comment in `lk2nd/device/dts/msm8916/msm8916-samsung.dts`)
 - Samsung Galaxy E5 - SM-E500F, SM-E500H
-- Samsung Galaxy E7 - SM-E7000
+- Samsung Galaxy E7 - SM-E7000, SM-E700F
 - Samsung Galaxy Grand Max - SM-G720AX
 - Samsung Galaxy Grand Prime - SM-G530FZ, SM-G530H, SM-G530R4, SM-G530W, SM-G530Y (G530Y is quirky - see comment in `lk2nd/device/dts/msm8916/msm8916-samsung.dts`)
 - Samsung Galaxy J3 (2016) - SM-J3109, SM-J320YZ
 - Samsung Galaxy J3 Pro - SM-J3110, SM-J3119
 - Samsung Galaxy J5 (2015) - SM-J5007, SM-J5008, SM-J500F, SM-J500FN, SM-J500H, SM-J500M
-- Samsung Galaxy J5 (2016) - SM-J5108, SM-J510F, SM-J510FN, SM-J510GN, SM-J510H, SM-J510MN, SM-J510UN
+- Samsung Galaxy J5 (2016) - SM-J5108, SM-J510F, SM-J510FN, SM-J510GN, SM-J510H, SM-J510L, SM-J510MN, SM-J510UN
 - Samsung Galaxy J7 (2015) - SM-J7008, SM-J700P
 - Samsung Galaxy On7 (2015) - SM-G6000, SM-G600FY, SM-G600S
 - Samsung Galaxy S4 Mini Value Edition - GT-I9195I
@@ -53,6 +55,7 @@
 - Vivo Y21L
 - Vodafone Smart prime 6
 - Wileyfox Swift - crackling
+- Wiko Pulp 4G
 - Xiaomi Mi 4i - ferrari
 - Xiaomi Redmi 2 - wt86047, wt88047
 - Xiaomi Redmi 3 - ido
@@ -64,7 +67,10 @@
 - Acer Liquid Z330 (T01)
 - CAT B35
 - FarEasTone Smart 506 (quirky - see comment in `lk2nd/device/dts/msm8909/msm8909-1gb-qrd-skuc.dts`)
-- Lenovo Yoga Tab 3 10 LTE
+- Haier G151 / Andromax A (quirky - see comment in `lk2nd/device/dts/msm8909/msm8909-1gb-qrd-skuc.dts`)
+- Lenovo Yoga Tab 3 8 LTE / WIFI
+- Lenovo Yoga Tab 3 10 LTE / WIFI
+- Lenovo Tab 10 (TB-X103F)
 - Mobvoi TicWatch Pro (WF12096)
 - Nokia 6300 4G
 - Nokia 8000 4G
@@ -73,6 +79,7 @@
 
 ### lk2nd-msm8952
 
+- Alcatel Idol 4 (6055*)
 - BQ X5 Plus (Longcheer L9360)
 - HMD Global Nokia 5 (nd1)
 - HMD Global Nokia 6 (ple)
@@ -81,7 +88,9 @@
 - Leeco s2
 - Lenovo K5 Play (l38011)
 - Motorola Moto E5 (nora)
+- Motorola Moto E5 Plus (hannah) (MSM8917)
 - Motorola Moto E5 Plus (hannah) (MSM8937)
+- Motorola Moto G4 / G4 Plus (athene) ( `fastboot boot lk2nd.img`, then `fastboot flash lk2nd lk2nd.img` )
 - Motorola Moto G5 (cedric)
 - Motorola Moto G5S (montana)
 - Motorola Moto G6 Play (jeter)
@@ -137,8 +146,8 @@
 - LG Google Nexus 5 - hammerhead D820, D821 (quirky - see comment in `lk2nd/device/dts/msm8974/msm8974-lge-hammerhead.dts`)
 - Motorola Moto X 2014 - victara
 - OnePlus One - bacon <!--(use `lk2nd-msm8974-appended-dtb.img`)-->
-- Samsung Galaxy Note 3 - SM-N9005
-- Samsung Galaxy S5 - SM-G900F
+- Samsung Galaxy Note 3 - SM-N9005, SM-N900T
+- Samsung Galaxy S5 - SM-G900F, SM-G900T
 - Samsung Galaxy S5 China LTE (Duos) - SM-G9006V/W, SM-G9008V/W, SM-G9009W
 - Sony Xperia Z3 - leo
 
@@ -159,17 +168,22 @@
 - Samsung Galaxy Tab 4 8.0 (2014) - SM-T330, SM-T330NU, SM-T331
 
 ### lk2nd-msm8994
-
+- Huawei Nexus 6P - Angler
 - LG G4 - h815
 
 ### lk2nd-msm8996
 
+- LG G5 - h850
 - LG V20 - h990
 - OnePlus 3T
-- Xiaomi Mi5 - Gemini
+- Xiaomi Mi 5 - gemini
+- Xiaomi Mi 5s - capricorn
+- Xiaomi Mi 5s Plus - natrium
+- ZTE Axon 7
 
 ### lk2nd-msm8960
 
+- Samsung Galaxy Express (SGH-I437)
 - Samsung Galaxy S4 Mini (GT-I9195)
 
 ## Porting new devices

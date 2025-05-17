@@ -526,6 +526,24 @@
 		};
 	};
 
+	j5xnltelgt {
+		model = "Samsung Galaxy J5 2016 (SM-J510L)";
+		compatible = "samsung,j5xnlte", "samsung,j5x";
+		lk2nd,match-bootloader = "J510L*";
+
+		lk2nd,dtb-files = "msm8916-samsung-j5x";
+
+		qcom,msm-id = <QCOM_ID_MSM8916 0>;
+		qcom,board-id = <0xCE08FF01 4>;
+
+		muic-reset {
+			compatible = "samsung,muic-reset";
+			i2c-reg = <0x25>;
+			i2c-sda-gpios = <&tlmm 105 I2C_GPIO_FLAGS>;
+			i2c-scl-gpios = <&tlmm 106 I2C_GPIO_FLAGS>;
+		};
+	};
+
 	j5xnlteub {
 		model = "Samsung Galaxy J5 2016 (SM-J510MN)";
 		compatible = "samsung,j5xnlte", "samsung,j5x";
@@ -718,6 +736,28 @@
 		model = "Samsung Galaxy E7 (SM-E7000)";
 		compatible = "samsung,e7000", "samsung,e7";
 		lk2nd,match-bootloader = "E7000*";
+
+		lk2nd,dtb-files = "msm8916-samsung-e7";
+
+		qcom,msm-id = <QCOM_ID_MSM8916 0>;
+		qcom,board-id = <0xCE08FF01 6>;
+
+		panel {
+			compatible = "samsung,e7-panel", "lk2nd,panel";
+
+			ss_dsi_panel_EA8061_HD {
+				compatible = "samsung,ea8061-ams549bu19";
+			};
+			ss_dsi_panel_EA8061_ID400418_HD {
+				compatible = "samsung,ea8061-ams549bu19-id400418";
+			};
+		};
+	};
+
+	e7ltexx {
+		model = "Samsung Galaxy E7 (SM-E700F)";
+		compatible = "samsung,e7ltexx", "samsung,e7";
+		lk2nd,match-bootloader = "E700F*";
 
 		lk2nd,dtb-files = "msm8916-samsung-e7";
 

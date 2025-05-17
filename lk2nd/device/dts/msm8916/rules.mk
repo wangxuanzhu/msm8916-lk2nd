@@ -12,6 +12,7 @@ QCDTBS += \
 	$(LOCAL_DIR)/msm8916-512mb-qrd-skuh.dtb \
 	$(LOCAL_DIR)/msm8916-asus-z00e.dtb \
 	$(LOCAL_DIR)/msm8916-asus-z00l.dtb \
+	$(LOCAL_DIR)/msm8916-ee-harrier-mini.dtb \
 	$(LOCAL_DIR)/msm8916-huawei-g7-l01.dtb \
 	$(LOCAL_DIR)/msm8916-huawei-hwt1a21l.dtb \
 	$(LOCAL_DIR)/msm8916-huawei-y635-l01.dtb \
@@ -30,9 +31,11 @@ QCDTBS += \
 	$(LOCAL_DIR)/msm8916-qrd-skut1.dtb \
 	$(LOCAL_DIR)/msm8916-samsung.dtb \
 	$(LOCAL_DIR)/msm8916-vivo-y21l.dtb \
+	$(LOCAL_DIR)/msm8916-wiko-chuppito.dtb \
 	$(LOCAL_DIR)/msm8929-samsung.dtb \
 	$(LOCAL_DIR)/msm8929-qrd-wt82918hd.dtb \
 	$(LOCAL_DIR)/msm8939-asus-z00t.dtb \
+	$(LOCAL_DIR)/msm8939-huawei-federer.dtb \
 	$(LOCAL_DIR)/msm8939-huawei-kiwi.dtb \
 	$(LOCAL_DIR)/msm8939-huawei-rio.dtb \
 	$(LOCAL_DIR)/msm8939-mtp.dtb \
